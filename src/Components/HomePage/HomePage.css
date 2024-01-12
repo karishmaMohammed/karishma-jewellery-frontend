@@ -1,0 +1,336 @@
+.top-nav {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 209, 106);
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+}
+.shop-name {
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+.jwellery-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+}
+.navs a {
+  color: white;
+}
+.gold-orn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gold-orn img {
+  width: 30px;
+  height: 30px;
+}
+.drop-down-items {
+  background: white;
+  border-radius: 15px;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  width: 150px;
+  top: 105%;
+  display: flex;
+  overflow: hidden;
+  right: 18%;
+  flex-direction: column;
+  align-items: start;
+  color: black;
+  border: 1px solid black;
+}
+.drop-down-items a,
+.diamond-drop-down-items a {
+  text-decoration: none;
+  padding: 10px 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+}
+.drop-down-items span:hover,
+.diamond-drop-down-items span:hover {
+  background: #f8edc2;
+  /* width: 150px; */
+}
+.span-divider {
+  border: 1px solid gray;
+  width: 80%;
+
+  margin: auto;
+}
+.diamond-drop-down-items {
+  width: 200px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: white;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  top: 105%;
+  color: black;
+  display: flex;
+  right: 7%;
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid black;
+}
+
+.introduction {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+  border: 1px solid palevioletred;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgb(244, 194, 69), rgb(244, 92, 142));
+  background-size: 200% 100%;
+  animation: changeBackgroundColor 5s linear infinite alternate;
+}
+@keyframes changeBackgroundColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.intro-text {
+  color: white;
+  width: 50%;
+  word-wrap: break-word;
+  /* / border: 1px solid purple; */
+  text-align: left;
+  font-size: clamp(20px, 2.4vw, 25px);
+  /* font-size: 35px; */
+  font-weight: 500;
+}
+.into-img {
+  width: 20%;
+  margin-top: 40px;
+  /* overflow: hidden; */
+}
+.into-img img {
+  width: 19.5vw;
+  height: 43vh;
+  border-radius: 25%;
+  /* padding-top: 40px; */
+}
+.gold-ornaments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 70px;
+  box-sizing: border-box;
+}
+.quote-gold-orn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.quote-gold-orn span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(244, 92, 142);
+}
+.quote-gold-orn span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.gold-inner-items {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.left-ar {
+  /* border: 1px solid brown; */
+  position: absolute;
+  left: -15px;
+  /* z-index: 1; */
+}
+.left-ar img {
+  width: 40px;
+  height: 40px;
+}
+.right-ar {
+  /* border: 1px solid blue; */
+  position: absolute;
+  right: -15px;
+  /* z-index: 1; */
+}
+.right-ar img {
+  transform: rotate(180deg);
+  width: 40px;
+  height: 40px;
+}
+
+.gold-items {
+  width: 90%;
+  display: flex;
+  margin: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 25px;
+}
+.gold-items-img img {
+  width: 220px;
+  height: 100%;
+  border-radius: 25px;
+}
+.gold-items-img {
+  width: 270px;
+  /* border: 1px solid black; */
+  height: 300px;
+}
+@media screen and (max-width: 700px) {
+  .introduction {
+    flex-direction: column-reverse;
+  }
+  .into-img {
+    width: 100%;
+  }
+  .into-img img {
+    width: 300px;
+    height: 300px;
+  }
+  .intro-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gold-items {
+    width: 90%;
+    display: flex;
+    margin: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 25px;
+  }
+  .gold-items-img img {
+    width: 180px;
+    height: 100%;
+    border-radius: 25px;
+  }
+  .gold-items-img {
+    width: 200px;
+    /* border: 1px solid black; */
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gold-items {
+    width: 90%;
+    display: flex;
+    margin: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 25px;
+  }
+  .gold-items-img img {
+    width: 120px;
+    height: 100%;
+    border-radius: 25px;
+  }
+  .gold-items-img {
+    width: 150px;
+
+    height: 180px;
+  }
+}
+
+/* MOBILE VIEW TOP NAV STYLING */
+
+.mobile-navs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 110vh;
+  text-align: center;
+  background-color: rgba(37, 50, 62, 0.5);
+  padding-bottom: 30px;
+  color:white;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 0px;
+}
+.mobile-gold-orn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.mobile-gold-orn img {
+  width: 30px;
+  height: 30px;
+}
+.mobile-home, .mobile-gold-orn{
+  padding: 20px 0px;
+  /* border-bottom: 1px solid white; */
+  color: white;
+  font-size: 25px;
+}
+.mobile-drop-down-items, .mobile-diamond-drop-down-items{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  /* padding: 10px 20%; */
+  justify-content: center;
+  align-items: center;
+}
+.mobile-drop-down-items a, .mobile-diamond-drop-down-items a{
+  color: rgb(244, 177, 8);
+  border-bottom: 1px solid white;
+  padding: 10px 0px;
+  width: 50%;
+  font-size: 20px;
+}
+.mobile-drop-down-items a:hover, .mobile-diamond-drop-down-items a:hover{
+  font-size: 25px;
+  cursor: pointer;
+  background: #f8edc2;
+}
+@media screen and (max-width: 900px) {
+.jwellery-logo{
+  display: block;
+  border-radius: 50%;
+}
+.navs{
+  display: none;
+}
+}

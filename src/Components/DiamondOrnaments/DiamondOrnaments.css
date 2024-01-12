@@ -1,0 +1,58 @@
+.gold-rings-matter {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .gold-rings-matter span:nth-child(1) {
+      font-size: 30px;
+      font-weight: 600;
+      color: rgb(244, 92, 142);
+    }
+    .gold-rings-matter span:nth-child(2) {
+      font-size: 20px;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+  
+  .gold-rings-outer {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 0px; */
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: auto auto auto; */
+    gap: 65px;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .gold-rings-inner img {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  .moving-to-next-page{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      justify-content: flex-end;
+      padding-bottom: 35px;
+      padding-right: 20px;
+      box-sizing: border-box;
+  }
+  .moving-to-next-page span{
+      font-size: 25px;
+      font-weight: 400;
+      color: rgb(244, 92, 142);
+  }
+  .right-arrow{
+      transform: rotate(180deg);
+      width: 35px;
+      height: 35px;
+  }
